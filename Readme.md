@@ -25,3 +25,5 @@ Django Automating Twitter Data in Python Using Tweepy and API Access.
 http://127.0.0.1:8000/
 
 ## Response example:
+
+![alt text](https://github.com/iamkelvinwhyte/django-twitter-bot/blob/main/Screenshot.png?raw=true)
