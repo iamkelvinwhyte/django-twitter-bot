@@ -1,0 +1,46 @@
+{% extends "user/base.html" %} {% block content %} {% load static %}
+
+
+	
+	<!-- CONTACT -->
+	<section id="contact">
+    <br>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="section-title">
+						<h1> Tweeter  Scrapper</h1>
+						<span class="st-border"></span>
+ <br>
+					</div>
+				</div>
+	
+
+				<div class="col-sm-8">
+					<form action="" class="contact-form" name="contact-form" method="post">
+						<div class="row">
+							{% comment %} <div class="col-sm-12">
+								<input type="text" name="name" required="required" placeholder="#covid">
+							</div> {% endcomment %}
+               {% csrf_token %}
+              {{TwForm}}
+					
+							<div class="col-sm-12">
+								<input type="submit" name="submit" value="Send Scrapper" class="btn btn-send">
+							</div>
+						</div>
+					</form>
+<hr>
+<pre>{{ json_string | linebreaks }}</pre>
+<hr>
+<h3>Download File</h3>
+ <a href="/uploads/{{file_name}}">click here</a>
+				</div>
+		
+			</div>
+		</div>
+	</section>
+	<!-- /CONTACT -->
+
+ 
+  {% endblock content %}
